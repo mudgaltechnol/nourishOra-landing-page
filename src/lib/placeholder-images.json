@@ -1,0 +1,58 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A delicious and healthy Indian meal with roti, dal, and raita.",
+      "imageUrl": "https://images.unsplash.com/photo-1606495213233-a0e054d4e300?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjBtZWFsJTJDJTIwcm90aSUyQyUyMGRhbCUyQyUyMHJhaXRhfGVufDB8fHx8MTc2NjI5MzYxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian meal"
+    },
+    {
+      "id": "chef-image",
+      "description": "A smiling chef holding an eggplant in a kitchen with fresh vegetables.",
+      "imageUrl": "https://images.unsplash.com/photo-1649933760325-8df9775f9d81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaGVmJTIwdmVnZXRhYmxlc3xlbnwwfHx8fDE3NjYyNDcxODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chef vegetables"
+    },
+    {
+      "id": "everyday-meal",
+      "description": "A balanced and healthy everyday Indian thali meal.",
+      "imageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB0aGFsaXxlbnwwfHx8fDE3NjY5NzAwODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian thali"
+    },
+    {
+      "id": "comfort-food",
+      "description": "A simple and comforting Indian meal with rice and dal.",
+      "imageUrl": "https://images.unsplash.com/photo-1626522858343-29c38b25a3ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxJbmRpYW4lMjByaWNlJTIwZGFsfGVufDB8fHx8fDE3NjY5NzAwODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rice dal"
+    },
+    {
+      "id": "weekly-special",
+      "description": "A special Indian dish of dahi vada.",
+      "imageUrl": "https://images.unsplash.com/photo-1576487248386-4f4820a4b732?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYWhpJTIwdmFkYXxlbnwwfHx8fDE3NjY5NzAwODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dahi vada"
+    },
+    {
+      "id": "location-whitefield",
+      "description": "Cityscape representing Whitefield.",
+      "imageUrl": "https://images.unsplash.com/photo-1453413453658-27fec8f43f29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaXR5JTIwc3RyZWV0fGVufDB8fHx8MTc2NjIzNzQwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city street"
+    },
+    {
+      "id": "location-marathahalli",
+      "description": "Cityscape representing Marathahalli.",
+      "imageUrl": "https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBjaXR5fGVufDB8fHx8MTc2NjI0NjgyNnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern city"
+    },
+    {
+      "id": "location-koramangala",
+      "description": "Cityscape representing Koramangala.",
+      "imageUrl": "https://images.unsplash.com/photo-1696592876133-41dce7099f15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx1cmJhbiUyMGJ1aWxkaW5nc3xlbnwwfHx8fDE3NjYyNDY4MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "urban buildings"
+    },
+    {
+      "id": "location-hsr",
+      "description": "Cityscape representing HSR Layout.",
+      "imageUrl": "https://images.unsplash.com/photo-1612457152810-5b2244c975e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaXR5JTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2NjE3MTQzN3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "city architecture"
+    }
+  ]
+}
