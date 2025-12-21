@@ -187,6 +187,7 @@ export default function WaitlistForm() {
                       </FormItem>
                     )}
                   />
+                  
                   <FormField
                     control={form.control}
                     name="address"
