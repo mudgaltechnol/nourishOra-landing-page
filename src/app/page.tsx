@@ -4,6 +4,7 @@ import About from '@/components/landing/about';
 import Benefits from '@/components/landing/benefits';
 import Locations from '@/components/landing/locations';
 import WaitlistForm from '@/components/landing/waitlist-form';
+import Pricing from '@/components/landing/pricing';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <About />
         <Benefits />
         <Locations />
+        <Pricing />
         <WaitlistForm />
       </main>
       <footer className="bg-background border-t border-border/40 text-foreground/60">

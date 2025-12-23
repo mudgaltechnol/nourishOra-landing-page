@@ -22,7 +22,7 @@ function doPost(e) {
     const data = JSON.parse(e.postData.contents);
 
     // Make sure all expected fields are present
-    if (!data.fullName || !data.preferredMeal || !data.address || !data.phone || !data.deliveryTime) {
+    if (!data.fullName || !data.preferredMeal || !data.address || !data.phone || !data.deliveryTime || !data.preferredPriceRange) {
        throw new Error("One or more required fields are missing in the submitted data.");
     }
     
@@ -32,7 +32,8 @@ function doPost(e) {
       data.preferredMeal,
       data.address,
       data.phone,
-      data.deliveryTime
+      data.deliveryTime,
+      data.preferredPriceRange,
     ]);
     
     // Return a proper success response
@@ -70,11 +71,18 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
-import { Loader2 } from 'lucide-react';
+import { IndianRupee, Loader2 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
 // Replace with your Google Apps Script Web App URL
 const FORM_URL = "https://script.google.com/macros/s/AKfycbxidcUOhLpP9-pfsclSPtU12HfZ0GLeZIKA0veLeUuzClBcP2UuFFTbwOu2aPDWgw-_KA/exec";
+
+const priceRanges = [
+  '₹120 – ₹130 (Everyday meals)',
+  '₹130 – ₹145 (Balanced meals)',
+  '₹145 – ₹180 (Includes premium meals)',
+  'Not sure yet',
+] as const;
 
 const formSchema = z.object({
   fullName: z.string().min(2, { message: 'Full name must be at least 2 characters.' }),
@@ -82,6 +90,7 @@ const formSchema = z.object({
   address: z.string().min(10, { message: 'Please enter a valid address.' }),
   phone: z.string().regex(/^\d{10}$/, { message: 'Please enter a valid 10-digit phone number.' }),
   deliveryTime: z.enum(['12:00 PM', '12:30 PM', '1:00 PM', '1:30 PM']),
+  preferredPriceRange: z.enum(priceRanges),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -181,13 +190,12 @@ export default function WaitlistForm() {
                       <FormItem>
                         <FormLabel>Preferred Healthy Meal</FormLabel>
                         <FormControl>
-                          <Input placeholder="Enter your preferred healthy meal" {...field} />
+                          <Input placeholder="Enter your preferred meal" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
-                  
                   <FormField
                     control={form.control}
                     name="address"
@@ -195,7 +203,7 @@ export default function WaitlistForm() {
                       <FormItem>
                         <FormLabel>Address</FormLabel>
                         <FormControl>
-                          <Input placeholder="Enter your full office address" {...field} />
+                          <Input placeholder="Enter your office address" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -208,7 +216,7 @@ export default function WaitlistForm() {
                       <FormItem>
                         <FormLabel>Phone Number</FormLabel>
                         <FormControl>
-                          <Input type="tel" placeholder="Enter your phone number" {...field} />
+                          <Input type="tel" placeholder="Enter your 10-digit phone number" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -231,6 +239,33 @@ export default function WaitlistForm() {
                             <SelectItem value="12:30 PM">12:30 PM</SelectItem>
                             <SelectItem value="1:00 PM">1:00 PM</SelectItem>
                             <SelectItem value="1:30 PM">1:30 PM</SelectItem>
+                          </SelectContent>
+                        </Select>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="preferredPriceRange"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Preferred Daily Price Range</FormLabel>
+                        <Select onValueChange={field.onChange} defaultValue={field.value}>
+                          <FormControl>
+                             <SelectTrigger>
+                              <SelectValue placeholder="Select a price range" />
+                            </SelectTrigger>
+                          </FormControl>
+                          <SelectContent>
+                            {priceRanges.map((range) => (
+                              <SelectItem key={range} value={range}>
+                                <div className="flex items-center gap-2">
+                                  {range !== 'Not sure yet' && <IndianRupee className="h-4 w-4" />}
+                                  {range.replace(/₹/g, '').trim()}
+                                </div>
+                              </SelectItem>
+                            ))}
                           </SelectContent>
                         </Select>
                         <FormMessage />
