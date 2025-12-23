@@ -10,11 +10,11 @@ export default function Hero() {
   return (
     <section id="home" className="relative w-full overflow-hidden bg-[#242D28] py-6 md:py-8 lg:py-10">
        <div
-        className="absolute -bottom-48 -left-32 h-[30rem] w-[30rem] bg-contain bg-no-repeat opacity-10"
+        className="pointer-events-none absolute -bottom-48 -left-32 h-[30rem] w-[30rem] bg-contain bg-no-repeat opacity-10"
         style={{ backgroundImage: "url('/bamboo-left.png')" }}
       />
       <div
-        className="absolute -top-48 -right-48 h-[40rem] w-[40rem] bg-contain bg-no-repeat opacity-10"
+        className="pointer-events-none absolute -bottom-48 -right-48 h-[30rem] w-[30rem] bg-contain bg-no-repeat opacity-10"
         style={{ backgroundImage: "url('/bamboo-right.png')" }}
       />
 

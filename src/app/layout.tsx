@@ -5,6 +5,10 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Nourishora',
   description: 'Thoughtfully Cooked. Simply Delivered Every Bite',
+  // icons: {
+  //    icon: "/icon.png",
+  //   // apple: "/apple-icon.png",
+  // },
 };
 
 export default function RootLayout({
