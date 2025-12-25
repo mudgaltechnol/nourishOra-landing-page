@@ -155,7 +155,7 @@ export default function WaitlistForm() {
   }
 
   return (
-    <section id="waitlist" className="w-full bg-[#0F1716] text-white py-12 md:py-24 lg:py-32">
+    <section id="waitlist" className="w-full bg-[#1E2E2C] text-white py-12 md:py-24 lg:py-32">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="mx-auto max-w-2xl">
           <Card className="bg-transparent border-zinc-700">
@@ -163,7 +163,7 @@ export default function WaitlistForm() {
               <CardTitle className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">
                 Join the Nourishora Waitlist
               </CardTitle>
-              <CardDescription className="text-zinc-400">
+              <CardDescription className="text-zinc-200">
                 Be the first to know when we launch in your area!
               </CardDescription>
             </CardHeader>

@@ -38,8 +38,8 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt="NourishOra Logo"
-            width={140}
-            height={140}
+            width={100}
+            height={100}
             className="rounded-full"
           />
           <span className="font-headline text-2xl font-bold text-[#1F2D2B]">
@@ -52,6 +52,7 @@ export default function Header() {
             <NavLink href="#home">Home</NavLink>
             <NavLink href="#about">About Us</NavLink>
             <NavLink href="#why-us">Why Choose Us</NavLink>
+            <NavLink href="#locations">Initial Pilot Launch</NavLink>
           </nav>
           <a href="#waitlist" className={cn(buttonVariants({variant: 'secondary'}), "font-bold")}>
             Join Waitlist
@@ -66,7 +67,7 @@ export default function Header() {
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-background">
+            <SheetContent side="right" className="bg-primary-foreground">
               <div className="grid gap-6 p-6">
                 <a href="#home" className="flex items-center gap-2">
                    <Image
@@ -79,8 +80,9 @@ export default function Header() {
                 </a>
                 <nav className="grid gap-4">                 
                   <NavLink href="#home" onClick={() => setIsSheetOpen(false)}>Home</NavLink>
-                  <NavLink href="#about" onClick={() => setIsSheetOpen(false)}>About Us</NavLink>
-                  <NavLink href="#why-us" onClick={() => setIsSheetOpen(false)}>Why Choose Us</NavLink>
+                  <NavLink href="#about" onClick={() => setIsSheetOpen(false)}>About Nourishora</NavLink>
+                  <NavLink href="#why-us" onClick={() => setIsSheetOpen(false)}>Why Nourishora</NavLink>
+                  <NavLink href="#locations" onClick={() => setIsSheetOpen(false)}>Initial Pilot Launch</NavLink>
                 </nav>
                 <a href="#waitlist" onClick={() => setIsSheetOpen(false)}>
                   <Button className="w-full font-bold" variant="secondary">Join Waitlist</Button>

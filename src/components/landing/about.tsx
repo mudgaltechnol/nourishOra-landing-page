@@ -29,7 +29,7 @@ export default function About() {
   const chefImage = PlaceHolderImages.find((img) => img.id === 'chef-image');
 
   return (
-    <section id="about" className="w-full bg-[#CBCCCC] text-zinc-900 py-12 md:py-24 lg:py-32">
+    <section id="about" className="w-full bg-[#F9FAF8] text-zinc-900 py-12 md:py-24 lg:py-32">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="grid items-center gap-12 md:grid-cols-2 lg:gap-24">
           <div className="space-y-4 text-center md:text-left">

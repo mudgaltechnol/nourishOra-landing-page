@@ -20,13 +20,13 @@ export default function Hero() {
 
       <div className="container mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:px-6">
         <div className="space-y-6 text-center md:text-left">
-          <h1 className="font-headline text-5xl font-bold tracking-tight text-primary-foreground sm:text-6xl md:text-7xl">
-            Thoughtfully Cooked. Simply Delivered{' '}
-            <span className="text-secondary">Every Bite</span>
+          <h1 className="font-headline text-4xl font-bold tracking-tight text-primary-foreground sm:text-5xl md:text-6xl">
+              Fresh Homestyle Office Lunches,{` `}
+            <span className="text-secondary">Delivered Daily</span>
           </h1>
+
           <p className="mx-auto max-w-2xl text-lg text-primary-foreground/80 md:mx-0">
-            Nourishora brings you clean, hygienic meals crafted for daily
-            consumption — that keeps food simple and dependable.
+          Good food at the right time—healthy, hygienic homestyle meals delivered to your tech desk, no fees, no hassle.
           </p>
           <div className="flex justify-center md:justify-start">
              <a href="#waitlist" className={cn(buttonVariants({ size: 'lg', variant: 'secondary' }), 'font-bold group')}>
@@ -37,7 +37,7 @@ export default function Hero() {
         <div className="relative mx-auto max-w-lg">
           {heroImage && (
              <Image
-                src="/f14.png"
+                src="/hero-img.jpg"
                 alt={heroImage.description}
                 data-ai-hint={heroImage.imageHint}
                 width={600}

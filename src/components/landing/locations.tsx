@@ -28,7 +28,7 @@ export default function Locations() {
           <h2 className="font-headline mt-2 text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl">
             Built for Tech Professionals by Tech Professionals
           </h2>
-           <p className="mt-4 text-zinc-300 md:text-lg">
+           <p className="mt-4 text-zinc-200 md:text-lg">
             We're starting small and expanding quickly. Your locality is next
           </p>
         </div>
@@ -39,7 +39,7 @@ export default function Locations() {
                 {location.number}
               </div>
               <div className="pt-2">
-                <p className="text-lg text-zinc-300">{location.places}</p>
+                <p className="text-lg text-zinc-200">{location.places}</p>
               </div>
             </div>
           ))}
