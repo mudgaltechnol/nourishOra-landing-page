@@ -5,21 +5,21 @@ export default function Benefits() {
   const benefits = [
     {
       icon: <Leaf className="h-8 w-8 text-primary" />,
-      title: 'Fresh, Honest Ingredients',
+      title: 'Familiar, Homestyle Food',
       description:
-        'We use simple, fresh ingredients sourced for daily cooking — no unnecessary additives.',
+      'Meals inspired by everyday Indian kitchens — comforting, balanced, and predictable.',
     },
     {
       icon: <Scale className="h-8 w-8 text-primary" />,
-      title: 'Balanced Nutrition',
+      title: 'Built for Workdays',
       description:
-        'Balanced with protein, carbs, and veggies for sustained energy',
+        'Designed around office routines, not late-night cravings or impulse orders.',
     },
     {
       icon: <Clock className="h-8 w-8 text-primary" />,
-      title: 'Hot Delivery by 1:30 PM',
+      title: 'Calm, Reliable Experience',
       description:
-        'Enjoy a piping hot lunch delivered right to your desk, always on time. Guaranteed.',
+        'No guesswork, no stress — just lunch that fits into your day.',
     },
   ];
 

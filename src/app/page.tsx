@@ -15,8 +15,8 @@ export default function Home() {
         <About />
         <Benefits />
         <Locations />
-        <Pricing />
         <WaitlistForm />
+        <Pricing />
       </main>
       <footer className="bg-background border-t border-border/40 text-foreground/60">
         <div className="container mx-auto max-w-7xl px-4 py-6 text-center">

@@ -2,20 +2,20 @@ export default function Locations() {
   const locations = [
     {
       number: '1',
-      places: 'JMD Megapolis, Welldone Tech Park, IRIS Tech Park',
+      places: 'Sector 48 / Sohna Road Tech Parks',
     },
     {
       number: '2',
-      places: 'Spaze I-Tech Park, Bestech Business Park',
+      places: 'Nearby sectors, tech parks and office clusters',
     },
-    {
-      number: '3',
-      places: 'Vatika Business Park, Candor Techspace',
-    },
-    {
-      number: '4',
-      places: 'More Towers Near these Towers',
-    },
+    // {
+    //   number: '3',
+    //   places: 'Vatika Business Park, Candor Techspace',
+    // },
+    // {
+    //   number: '4',
+    //   places: 'More Towers Near these Towers',
+    // },
   ];
 
   return (
@@ -23,13 +23,13 @@ export default function Locations() {
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="mx-auto max-w-4xl text-center">
           <div className="text-sm font-medium uppercase tracking-wider text-secondary">
-            Initial Pilot Launch
+            Starting Close to You
           </div>
           <h2 className="font-headline mt-2 text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl">
             Built for Tech Professionals by Tech Professionals
           </h2>
            <p className="mt-4 text-zinc-200 md:text-lg">
-            We're starting small and expanding quickly. Your locality is next
+            We’re launching NourishOra in a few office hubs first — so we can get it right before expanding further.
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-8">

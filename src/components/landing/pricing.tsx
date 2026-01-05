@@ -21,17 +21,17 @@ export default function Pricing() {
         </div>
 
         <p className="mx-auto max-w-2xl text-lg text-zinc-600">
-          Pricing varies slightly based on the meal type — with everyday meals
-          at the lower end and premium dishes priced a bit higher.
+          We’re aiming to keep NourishOra affordable for daily work lunches.
+          Final pricing will be shared before launch.
         </p>
 
-        <p className="mx-auto mt-4 max-w-xl text-base font-semibold text-primary">
+        {/* <p className="mx-auto mt-4 max-w-xl text-base font-semibold text-primary">
           Subscription plans will bring the average cost down even further.
         </p>
 
         <div className="mt-8 text-sm text-zinc-500">
           <p>Final pricing will be shared at launch.</p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
